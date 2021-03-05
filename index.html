@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
     <script src="https://kit.fontawesome.com/be9b3e923d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -23,12 +25,24 @@
                     <a href="" class="navigationLink">Contact</a>
                 </div>
                 <div id="hamburgerIcon">
-                    <a href="javascript:void(0)" class="icon"><i class="fas fa-bars"></i></a>
+                    <a href="javascript:void(0)" class="icon" onclick="navbarPop()"><i class="fas fa-bars"></i></a>
                 </div>
             </div>
         </div>
         <div id="headerGradient"></div>
         <div id="headerWhite"></div>
     </div>
+    <div id="welcomeContainer">
+        <p>We deliver the service you long for.</p>
+        <button id="welcomeButton">Let's discuss this together</button>
+    </div>
+    <div id="welcomeImage">
+        <a href='https://pngtree.com/so/community-helpers-clipart'>
+            <img src="img/pngtree1.png">
+        </a>
+    </div>
+
+    <script type="text/javascript" src="js/velocity.min.js"></script>
+    <script type="text/javascript" src="js/navbar.js"></script>
 </body>
 </html>

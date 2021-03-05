@@ -1,11 +1,14 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "helvetica"
+    font-family: "titillium web"
 }
 
 @media (min-width: 0) {
     #hamburgerIcon {
+        position: absolute;
+        left: 50%;
+
         width: 50%;
         height: 100px;
 
@@ -19,11 +22,37 @@
         padding-right: 20px;
     }
 
+    #linksContainer.responsive {
+        position: relative;
+        top: 100px;
+
+        width: 100%;
+        height: 0px;
+
+        background:#4e598c;
+        border-bottom: 2px solid #ffffff;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #linksContainer.responsive a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        opacity: 0;
+
+        font-size: 0.5em;
+    }
+
     #linksContainer a {
         display: none;
     }
 
     #brandTag {
+        position: absolute;
         font-size: 13vw;
         padding-left: 5vw;
     }
@@ -31,6 +60,31 @@
     #dummyIcon {
         width: 13vw;
         height: 13vw;
+    }
+
+    #welcomeContainer {
+        top: 150px;
+        left: 10vw;
+    
+        width: 80vw;
+        height: 300px;
+    
+        font-size: 10vw;
+    }
+
+    #welcomeButton {
+        width: 80vw;
+        height: 50px;
+
+        font-size: 0.6em;
+    }
+
+    #welcomeImage {
+        position: absolute;
+        top: calc(300px + 30vw);
+        left: 10vw;
+    
+        width: 80vw;
     }
 }
 
@@ -46,12 +100,61 @@
     }
 }
 
+@media (min-width: 380px) {
+    #welcomeContainer {
+        top: 150px;
+        left: 7vw;
+    
+        width: 80vw;
+        height: 300px;
+    
+        font-size: 8vw;
+    }
+
+    #welcomeButton {
+        width: 70vw;
+        height: 50px;
+
+        font-size: 0.6em;
+    }
+
+    #welcomeImage {
+        position: absolute;
+        top: calc(300px + 10vw);
+        left: 10vw;
+    
+        width: 80vw;
+    }
+}
+
+@media (min-width: 600px) {
+    #welcomeContainer {
+        top: 150px;
+        left: 7vw;
+    
+        width: 60vw;
+        height: 300px;
+    
+        font-size: 7vw;
+    }
+
+    #welcomeButton {
+        width: 60vw;
+        height: 50px;
+
+        font-size: 0.6em;
+    }
+}
+
 @media (min-width: 800px) {
     #hamburgerIcon {
         display: none;
     }
 
     #linksContainer {
+        position: relative;
+        left: 50%;
+
         width: 50%;
         height: 100px;
     
@@ -62,10 +165,48 @@
 
     #linksContainer a {
         display: block;
+        opacity: 1;
+    }
+
+    #welcomeContainer {
+        top: 200px;
+        left: 100px;
+    
+        width: 600px;
+        height: 300px;
+    
+        font-size: 3em;
+    }
+
+    #welcomeButton {
+        width: 300px;
+        height: 50px;
+
+        font-size: 0.4em;
+    }
+
+    #welcomeImage {
+        position: absolute;
+        top: 400px;
+        left: 10vw;
+    
+        width: 80vw;
+    }
+}
+
+@media (min-width: 1200px) {
+    #welcomeImage {
+        position: relative;
+        top: -150px;
+        left: 750px;
+    
+        width: 500px;
     }
 }
 
 #headerContainer {
+    position: absolute;
+
     width: 100%;
     height: 600px;
 }
@@ -119,7 +260,7 @@
 .navigationLink {
     text-decoration: none;
     color: #ffffff;
-    font-size: 1.1em;
+    font-size: 1.3em;
     text-align: center;
 
     flex-grow: 1;
@@ -129,4 +270,31 @@
 
 .navigationLink:hover {
     color: #f9c784;
+}
+
+#welcomeContainer {
+    position: relative;
+    color: #ffffff;
+}
+
+#welcomeButton {
+    line-height: 50px;
+    font-weight: 600;
+    background: #f9c784;
+    color: #000000;
+
+    border: none;
+    border-radius: 25px;
+
+    transition: color 500ms ease-out, background 500ms ease-out;
+}
+
+#welcomeButton:hover {
+    background: #000000;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#welcomeImage a img {
+    width: 100%;
 }
