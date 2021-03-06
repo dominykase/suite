@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "titillium web"
+    font-family: "titillium web";
 }
 
 @media (min-width: 0) {
@@ -62,14 +62,20 @@
         height: 13vw;
     }
 
-    #welcomeContainer {
-        top: 150px;
+    .headText {
         left: 10vw;
     
+        font-size: 10vw;
+    }
+
+    .paraText {
+        font-size: 7vw;
+    }
+
+    #welcomeContainer {
+        top: 150px;
         width: 80vw;
         height: 300px;
-    
-        font-size: 10vw;
     }
 
     #welcomeButton {
@@ -86,6 +92,15 @@
     
         width: 80vw;
     }
+
+    .buffer {
+        height: 100vw;
+    }
+
+    #wrapper1 {
+        width: 80vw;
+        margin: 150px 10vw 0 10vw;
+    }
 }
 
 @media (min-width: 270px) {
@@ -101,14 +116,20 @@
 }
 
 @media (min-width: 380px) {
-    #welcomeContainer {
-        top: 150px;
+    .headText {
         left: 7vw;
     
+        font-size: 8vw;
+    }
+
+    .paraText {
+        font-size: 4vw;
+    }
+
+    #welcomeContainer {
+        top: 150px;
         width: 80vw;
         height: 300px;
-    
-        font-size: 8vw;
     }
 
     #welcomeButton {
@@ -128,14 +149,20 @@
 }
 
 @media (min-width: 600px) {
-    #welcomeContainer {
+    .headText {
         top: 150px;
         left: 7vw;
     
+        font-size: 7vw;
+    }
+
+    .paraText {
+        font-size: 3.5vw;
+    }
+
+    #welcomeContainer {
         width: 60vw;
         height: 300px;
-    
-        font-size: 7vw;
     }
 
     #welcomeButton {
@@ -143,6 +170,11 @@
         height: 50px;
 
         font-size: 0.6em;
+    }
+
+    #wrapper1 {
+        width: 600px;
+        margin: 0 auto;
     }
 }
 
@@ -152,7 +184,7 @@
     }
 
     #linksContainer {
-        position: relative;
+        position: absolute;
         left: 50%;
 
         width: 50%;
@@ -168,14 +200,20 @@
         opacity: 1;
     }
 
-    #welcomeContainer {
+    .headText {
         top: 200px;
         left: 100px;
     
+        font-size: 3em;
+    }
+
+    .paraText {
+        font-size: 1.5em;
+    }
+
+    #welcomeContainer {
         width: 600px;
         height: 300px;
-    
-        font-size: 3em;
     }
 
     #welcomeButton {
@@ -201,6 +239,10 @@
         left: 750px;
     
         width: 500px;
+    }
+
+    .buffer {
+        height: 0;
     }
 }
 
@@ -297,4 +339,27 @@
 
 #welcomeImage a img {
     width: 100%;
+}
+
+.buffer {
+    position: static;
+    width: 100%;
+}
+
+#wrapper1 {
+    height: 200px;
+}
+
+.paraText { 
+    margin-top: 10px;
+}
+
+.highlight {
+    color: #ff8c42;
+}
+
+.test{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
 }
