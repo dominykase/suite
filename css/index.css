@@ -94,12 +94,12 @@
     }
 
     .buffer {
-        height: 100vw;
+        height: 92vw;
     }
 
     #wrapper1 {
         width: 80vw;
-        margin: 150px 10vw 0 10vw;
+        margin: 0 10vw;
     }
 }
 
@@ -174,7 +174,6 @@
 
     #wrapper1 {
         width: 600px;
-        margin: 0 auto;
     }
 }
 
@@ -229,6 +228,10 @@
         left: 10vw;
     
         width: 80vw;
+    }
+
+    #wrapper1 {
+        width: 600px;
     }
 }
 
@@ -346,8 +349,13 @@
     width: 100%;
 }
 
-#wrapper1 {
-    height: 200px;
+.viewportContainer {
+    width: 98vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .paraText { 
@@ -356,10 +364,4 @@
 
 .highlight {
     color: #ff8c42;
-}
-
-.test{
-    width: 100px;
-    height: 100px;
-    border: 1px solid black;
 }
